@@ -61,7 +61,7 @@ int loginUser(char *username) {
     }
 
     fclose(fp);
-    printf("❌ Invalid credentials.\n");
+    printf("Invalid credentials.\n");
     return 0;
 }
 
@@ -168,7 +168,7 @@ int main() {
                 if (loggedIn)
                     createListing(currentUser);
                 else
-                    printf("❌ Please log in first.\n");
+                    printf("Please log in first.\n");
                 break;
             case 4:
                 viewListings();
