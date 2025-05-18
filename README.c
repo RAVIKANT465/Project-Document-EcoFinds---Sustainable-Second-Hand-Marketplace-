@@ -1,3 +1,56 @@
+SUMMARISATION OF WHOLE SCRIPT.
+    
+APP INFO (ecofinds_gui) 
+    
+This is a simple graphical desktop application created using GTK in C , which allows users to -
+
+Register and log in with a username and password.
+
+Create product listings with details like title, description, category, and price.
+
+View all product listings submitted by any user.
+
+All data is stored in simple text files.
+
+1. User Registration and Login
+Users can register by entering a username and password, which are saved in a file called users.txt.
+
+They can log in by entering the same credentials.
+
+If login is successful, the app displays a confirmation dialog.
+
+2. Creating Product Listings
+After logging in, users can:
+
+Enter a product title
+
+Write a short description
+
+Choose a category
+
+Set a price
+
+3. Viewing Listings
+A "View Listings" tab shows all product listings.
+
+Listings are read from products.txt and displayed in a text area.
+
+Click the "Refresh Listings" button to reloads the latest entries.
+    
+4.Graphical User Interface (GUI)
+The app has a clean GTK window with 3 tabs:
+
+Login/Register
+
+Create Listing
+
+View Listings
+
+Input fields, buttons, and text views are neatly arranged using GTK's grid layout.
+
+
+
+
 #include <gtk/gtk.h>
 #include <stdio.h>
 #include <string.h>
